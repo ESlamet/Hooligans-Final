@@ -1,0 +1,208 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(images/);
+}
+
+#myVideo{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+#header{
+  width: 100%;
+  height: 100vh;
+  min-width: 350px;
+}
+.container{
+  padding: 10px 10%;
+  box-sizing: border-box;
+}
+
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+
+h1 a{
+  color: black;
+  font-family: 'Rock Salt', cursive;
+  font-size: 36px;
+  text-shadow: 0.2px 4px rgb(165, 42,42);
+  text-decoration: none;
+}
+
+nav ul{
+  
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+  
+}
+
+nav ul li a{
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Rock Salt', cursive;
+}
+
+nav ul li :hover{
+  text-shadow: 2px 2px 3px rgb(165, 42,42);
+  font-weight: bold;
+  color: rgb(165, 42,42);
+  transition: 0.3s;
+}
+
+
+.socialdiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.discorddiv, .twitterdiv{
+  display: flex;
+  height: 50px;
+  width: 50px;
+  margin-inline: 10px;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.discorddiv:hover, .twitterdiv:hover, .mediv:hover {
+  box-shadow: inset 0 0 0 3px rgb(165, 42,42);
+  border-radius: 20px;
+}
+
+
+
+.mediv{
+  display: flex;
+  height: 50px;
+  width: 50px;
+  margin-inline: 10px;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.discordicon{
+  width: 100%;
+}
+
+.twittericon{
+  width: 100%;
+}
+
+.meicon{
+  width: 100%;
+}
+
+.FAQheader{
+  color: black;
+  font-family: 'Rock Salt', cursive;
+  text-shadow: 0.2px 3px rgb(165, 42,42);
+  text-decoration: none;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.FAQsection {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.FAQsection h2 {
+  position: relative;
+  width: 23rem;
+}
+
+.FAQsection h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 12px;
+  width: 67px;
+  height: 2px;
+}
+
+.accordion {
+  width: 100%;
+  padding: 0 5px;
+  border: 2px solid rgb(0, 0, 0);
+  cursor: pointer;
+  border-radius: 50px;
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+}
+
+.accordion .icon {
+  margin: 0 10px 0 0;
+  width: 40px;
+  height: 40px;
+  background: url(/images/icons8-plus-30.png) no-repeat 8px 5px;
+  border-radius: 50%;
+  float: left;
+  transition: all .3s ease-in;
+}
+
+.accordion h5 {
+  font-size: 20px;
+  margin: 0;
+  margin-left: 10px;
+  padding: 3px 0 0 0;
+  font-weight: normal;
+  color: rgb(0, 0, 0);
+  transition: all 0.3s ease-in;
+}
+
+.active .icon {
+  background: url(/images/icons8-minus-30.png) no-repeat 8px 5px;
+}
+
+.active {
+  color: black;
+  background-color: rgb(165, 42,42);
+}
+
+.active h5 {
+  color: black;
+}
+
+.panel {
+  padding: 0 15px;
+  border-left: 1px solid rgb(165, 42,42);
+  margin-left: 25px;
+  font-size: 14px;
+  text-align: justify;
+  overflow: hidden;
+  max-height: 0;
+  transition: all .3s ease-in;
+}
+
+@media screen and (max-width: 800px) {
+  
+}

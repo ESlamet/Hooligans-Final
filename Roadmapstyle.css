@@ -1,0 +1,228 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(images/);
+}
+
+#myVideo{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+#header{
+  width: 100%;
+  height: 100vh;
+  min-width: 350px;
+}
+.container{
+  padding: 10px 10%;
+  box-sizing: border-box;
+}
+
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+
+h1 a{
+  color: black;
+  font-family: 'Rock Salt', cursive;
+  font-size: 36px;
+  text-shadow: 0.2px 4px rgb(165, 42,42);
+  text-decoration: none;
+}
+
+nav ul{
+  
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+  
+}
+
+nav ul li a{
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Rock Salt', cursive;
+}
+
+nav ul li :hover{
+  text-shadow: 2px 2px 3px rgb(165, 42,42);
+  font-weight: bold;
+  color: rgb(165, 42,42);
+  transition: 0.3s;
+}
+
+.socialdiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.discorddiv, .twitterdiv{
+  display: flex;
+  height: 50px;
+  width: 50px;
+  margin-inline: 10px;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.discorddiv:hover, .twitterdiv:hover, .mediv:hover {
+  box-shadow: inset 0 0 0 3px rgb(165, 42,42);
+  border-radius: 20px;
+}
+
+
+
+.mediv{
+  display: flex;
+  height: 50px;
+  width: 50px;
+  margin-inline: 10px;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.discordicon{
+  width: 100%;
+}
+
+.twittericon{
+  width: 100%;
+}
+
+.meicon{
+  width: 100%;
+}
+
+.roadmapdiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  background-color: rgb(165, 42,42);
+  width: 100%;
+  padding: 15px;
+  border: 5px;
+  border-style: solid;
+}
+
+.roadmapdiv h2 {
+  text-align: center;
+}
+
+.roadmapdiv p {
+  margin-top: 20px;
+}
+
+.roadmapsection{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.roadmapheader{
+  color: black;
+  font-family: 'Rock Salt', cursive;
+  text-shadow: 0.2px 3px rgb(165, 42,42);
+  text-decoration: none;
+}
+
+.roadmaproad{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 820px;
+  width: 100px;
+  margin: auto;
+  position: absolute;
+  z-index: 4;
+  left: 0;
+  right: 0;
+  margin-top: 80px;
+}
+
+.road{
+
+ height: 410px;
+}
+
+.phase1section, .phase3section, .phase5section{
+  height: 130px;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.phase2section, .phase4section{
+  height: 130px;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-right: 100px;
+}
+
+.phase1, .phase3, .phase5 {
+  height: 100%;
+  width: 35%;
+  box-shadow:  0 0 0 5px rgb(165, 42,42), 
+               0 0 10px 10px rgb(0, 0, 0);
+  font-size: 18px;
+  font-family: 'Rock Salt', cursive;
+  border-radius: 10px;
+  background-color: rgb(227, 227, 227);
+}
+
+.phase2, .phase4 {
+  height: 100%;
+  width: 35%;
+  box-shadow:  0 0 0 5px rgb(165, 42,42), 
+               0 0 10px 10px rgb(0, 0, 0);
+               font-size: 18px;
+  font-family: 'Rock Salt', cursive;
+  border-radius: 10px;
+  background-color: rgb(227, 227, 227);
+}
+
+.phaselist {
+  font-size: 14px;
+  text-align: left;
+  list-style-position: outside;
+  margin-left: 20px;
+}
+@media screen and (max-width: 800px) {
+  
+}
